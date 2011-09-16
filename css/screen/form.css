@@ -1,0 +1,462 @@
+fieldset
+{
+	position:relative;
+	float:left;
+	clear:both;
+	border-top:solid 1px #BCC19F;
+	background:#DDDECC;
+	border-style:none;
+	margin:0;
+	padding:0 0 10px;
+	width: 90%;
+}
+
+fieldset.submit
+{
+	float:none;
+	width:auto;
+	background:transparent;
+	border-style:none;
+	padding:1.5em 0 1em;
+}
+
+fieldset.alt
+{
+	background:#E7E9DC;
+}
+
+legend
+{
+	color:#000;
+	font-weight:700;
+}
+
+legend span
+{
+	position:absolute;
+	left:10px;
+	top:0;
+	font-size:135%;
+	margin:5px 0;
+}
+
+fieldset ul
+{
+	list-style:none;
+	float:left;
+	width:70%;
+	margin:0;
+	padding:30px 0 0;
+}
+
+fieldset ul.showOrder
+{
+	list-style:decimal inside none;
+}
+
+fieldset li
+{
+	clear:both;
+	padding:.5em 0;
+}
+
+fieldset li.together
+{
+	padding:0;
+}
+
+fieldset div.inline
+{
+	float:left;
+	margin-right:1em;
+}
+
+label
+{
+	float:left;
+	width: 95px;
+	text-align:right;
+	vertical-align:top;
+}
+
+label.inline
+{
+	float:none;
+	width:auto;
+}
+
+fieldset ul.longfields label
+{
+	float:none;
+	width:auto;
+	text-align:left;
+	display:block;
+}
+
+fieldset ul li div.inline label
+{
+	width:200px;
+}
+
+fieldset ul.multipleInputs
+{
+	list-style:none;
+	margin:0;
+}
+
+fieldset ul.multipleInputs label
+{
+	width:auto;
+	text-align:left;
+	display:block;
+	float:none;
+}
+
+#formContainer form ul li
+{
+	padding:10px 0;
+}
+
+#formContainer ul.longfields li input,#formContainer ul.longfields li textarea
+{
+	width:600px;
+	margin-left:10px;
+}
+
+#formContainer ul.longfields li label
+{
+	margin:0 0 5px 10px;
+}
+
+#formContainer label
+{
+	font-weight:700;
+	margin-top:5px;
+}
+
+#formContainer label em
+{
+	font-weight:400;
+}
+
+#formContainer li.error
+{
+	margin:0 0 10px;
+}
+
+#formContainer li p.errorMessage
+{
+	margin-left:100px;
+}
+
+#formContainer ul.longfields li p.errorMessage
+{
+	margin-left:10px;
+}
+
+#formContainer p.errorMessage
+{
+	background:url("/images/icons/error.gif") no-repeat;
+	padding:2px 0 2px 20px;
+}
+
+#formContainer ul.longfields label
+{
+	width:auto;
+	float:none;
+	margin:0;
+}
+
+#formContainer form .submit
+{
+	margin-left:15px;
+	clear:both;
+	padding:10px;
+}
+
+#formContainer form .section
+{
+	border-top:solid 1px #8ABC8A;
+	padding:5px 0;
+}
+
+#formContainer form .section h4
+{
+	font-size:135%;
+	margin:10px 0 10px 15px;
+}
+
+#formContainer form .section div.notes
+{
+	font-size:10px;
+	margin:0 1em 0 0;
+}
+
+input,textarea,select,input.text,input.file
+{
+	border:solid 1px #AAA;
+	color:#000;
+	background:#FFF;
+	font-size:12px;
+	margin-left:5px;
+}
+
+input,input.text,input.file
+{
+	padding:4px 2px;
+}
+
+input.text,input.file,input[type="text"],input[type='file']
+{
+	margin-left:5px;
+	width:335px;
+}
+
+input[type="checkbox"]
+{
+	background:transparent;
+	border:0;
+	margin:0 5px;
+}
+
+input.day
+{
+	width:2em;
+}
+
+input.year
+{
+	width:3em;
+}
+
+input:focus,textarea:focus
+{
+	background:#FFFFE1;
+	border:solid 1px #595959;
+}
+
+input.button
+{
+	font-weight:700;
+	font-size: 1.2em;
+	color:#FFF;
+	background-color:#b11f22;
+	width:auto;
+	border-color:#000
+	border-style:solid;
+	border-width:2px;
+	padding:2px;
+}
+
+input.short
+{
+	width:165px;
+}
+
+textarea
+{
+	line-height:160%;
+	height:20em;
+	width:335px;
+	margin-left:5px;
+	padding:4px 2px;
+}
+
+fieldset ul.longfields textarea,texatarea.long
+{
+	width:auto;
+}
+
+fieldset ul.multipleInputs input[type="checkbox"]
+{
+	margin:0 5px 0 0;
+}
+
+select.longselectbox
+{
+	width:auto;
+	height:10em;
+}
+
+form div.notes
+{
+	float:right;
+	width:25%;
+	height:auto;
+	margin-right:10px;
+	border:solid 1px #555;
+	background-color:#FFFFE1;
+	color:#555;
+	font-size:88%;
+	margin-top:38px;
+	padding:5px;
+}
+
+form div.notes h4
+{
+	background:url(/images/icons/info.gif) no-repeat;
+	color:#666;
+	font-size:110%;
+	border-color:#666;
+	border-style:solid;
+	border-width:0 0 1px;
+	padding:3px 0 3px 27px;
+}
+
+form fieldset div.notes p
+{
+	color:#666;
+	margin:0 0 1.2em;
+}
+
+form div.notes ul
+{
+	list-style:inside;
+	margin-left:0;
+}
+
+fieldset fieldset
+{
+	position:relative;
+	float:left;
+	border:solid 1px #555;
+	background:transparent;
+	width:330px;
+	overflow:hidden;
+	margin:0 0 10px 205px;
+	padding:0 5px 5px;
+}
+
+fieldset fieldset legend
+{
+	font-weight:400;
+	margin:0;
+	padding:0 3px 0 9px;
+}
+
+fieldset fieldset ul,fieldset fieldset ul
+{
+	position:relative;
+	width:100%;
+	margin:0 0 0 5px;
+	padding:0;
+}
+
+fieldset fieldset ul li
+{
+	display:block;
+	overflow:hidden;
+	margin:0;
+	padding:5px 0;
+}
+
+fieldset fieldset label
+{
+	width:50%;
+	padding-top:0;
+}
+
+.error
+{
+	background:#FCC;
+	border:solid 1px #FF5252;
+	margin:-1px 0 0;
+	padding:.5em 0;
+}
+
+li .errorMessage
+{
+	padding-bottom:2px;
+	margin:0 0 0 100px;
+}
+
+.errorMessage
+{
+	width:auto;
+	margin:0 0 0 1em;
+}
+
+fieldset fieldset .errorMessage
+{
+	width:auto;
+	margin:0;
+}
+
+.sortBox fieldset
+{
+	width:auto;
+	min-width:300px;
+}
+
+* html .sortBox fieldset
+{
+	width:600px;
+}
+
+* html .sortBox legend
+{
+	top:0;
+}
+
+.sortBox legend span
+{
+	left:0;
+	background:#191C3E;
+	text-align:center;
+	width:100%;
+	color:#FFF;
+	margin:-0.5em 0 1em;
+}
+
+* html .sortBox legend span
+{
+	margin-left:0;
+	width:600px;
+}
+
+.sortBox ul
+{
+	padding-top:1em;
+}
+
+.sortBox label
+{
+	float:none;
+	display:block;
+	text-align:left;
+	width:auto;
+	margin:5px 0;
+}
+
+.sortBox label.float
+{
+	float:left;
+	text-align:right;
+	margin-right:.5em;
+}
+
+.sortBox .inside
+{
+	margin-top:20px;
+}
+
+.spacingbox
+{
+	border-right:solid 1px #FFF;
+	border-left:solid 1px #FFF;
+	vertical-align:middle;
+	text-align:center;
+	width:9em;
+	margin:2em 0;
+	padding:1em 0;
+}
+
+select#newscategory
+{
+	width:300px;
+}
+
+#formContainer form .section div.notes h4,form fieldset div.notes p.last
+{
+	margin:0;
+}
