@@ -26,11 +26,12 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
 @import url(table.css);
+@import url(form.css);
 
 /* TYPOGRAPHY */
     body {
         text-align: left;
-        font-family: Corbel, ‘Lucida Grande’, ‘Lucida Sans Unicode’, ‘DejaVu Sans’, ‘Bitstream Vera Sans’, ‘Liberation Sans’, Verdana, ‘Verdana Ref’, sans-serif;
+        font-family: Corbel, ï¿½Lucida Grandeï¿½, ï¿½Lucida Sans Unicodeï¿½, ï¿½DejaVu Sansï¿½, ï¿½Bitstream Vera Sansï¿½, ï¿½Liberation Sansï¿½, Verdana, ï¿½Verdana Refï¿½, sans-serif;
         line-height: 1em;
         
         color: #333;
@@ -203,4 +204,28 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         border-bottom: 1px dotted black;
     }
     
-/* END TYPOGRAPHY */    
+/* END TYPOGRAPHY */
+
+	#signup {
+	font-weight:700;
+	font-size: 1.2em;
+	text-algin: center;
+	color:#FFF;
+	background-color:#b11f22;
+	width:400px;
+	border-color:#000;
+	border-style:solid;
+	border-width:2px;
+	padding:2px;
+	}
+	
+	p#signup a {
+		color: #FFF;
+		text-decoration: none;
+		text-align: center;
+	}
+	
+	p#signup a:hover {
+		color: #000;
+	}
+	

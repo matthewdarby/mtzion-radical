@@ -1,7 +1,7 @@
 /**
  * "Yet Another Multicolumn Layout" - (X)HTML/CSS framework
  * (en) stylesheet for screen layout
- * (de) Stylesheet für das Bildschirm-Layout
+ * (de) Stylesheet fï¿½r das Bildschirm-Layout
  *
  * @creator       YAML Builder V1.2.1 (http://builder.yaml.de)
  * @file          basemod.css
@@ -26,18 +26,54 @@
 
   /* (en) Marginal areas & page background */
   /* (de) Randbereiche & Seitenhintergrund */
-  body { background: #000 url("/images/radical-bg.jpg") no-repeat top right fixed; padding: 10px 0; font-family: Corbel, ‘Lucida Grande’, ‘Lucida Sans Unicode’, ‘DejaVu Sans’, ‘Bitstream Vera Sans’, ‘Liberation Sans’, Verdana, ‘Verdana Ref’, sans-serif;}
+  body { background: #000 url("/images/radical-bg.jpg") no-repeat top right fixed; padding: 10px 0; font-family: Corbel, ï¿½Lucida Grandeï¿½, ï¿½Lucida Sans Unicodeï¿½, ï¿½DejaVu Sansï¿½, ï¿½Bitstream Vera Sansï¿½, ï¿½Liberation Sansï¿½, Verdana, ï¿½Verdana Refï¿½, sans-serif;}
 
   /* Layout Alignment | Layout-Ausrichtung */
   .page_margins { margin: 0 auto; }
 
   /* Layout Properties | Layout-Eigenschaften */
   .page_margins { width: 840px;  }
-  .page { padding: 10px; background: #fff;}
+  .page { margin: 40px 0; background: #fff; background: url("/images/fade_820_bottom.png") no-repeat scroll left top transparent;  clear: both;}
   #header { padding: 45px 2em 1em 20px; color: #fff; text-align: center;}
   #main { margin: 10px 0; background: #fff; }
   #footer { padding: 10px 20px; color:#666; background: #f9f9f9; border-top: 5px #efefef solid; text-align:center;}
 
+#navigation {
+	width: 840px;
+	float: right;
+	text-align: center;
+	margin: 0px;
+	padding: 20px 0px;
+	background: #FFF;
+	border-bottom: 1px solid #C0C0C0;
+}
+	
+#navigation li {
+	display: inline;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+		
+#navigation ul {
+	margin: 0px;
+	padding: 5px 10px 5px 10px;
+}
+		
+#navigation a, #navigation a:visited {
+	color: #000;
+	font-weight: bold;
+	font-size: 1.3em;
+	margin: 0px;
+	padding: 5px 30px 5px 30px;
+	text-decoration: none;
+	border: none;
+}
+		
+#navigation a:hover {
+	background: #B11F22;
+	text-decoration: none;
+}	
   /*-------------------------------------------------------------------------*/
 
   /**
