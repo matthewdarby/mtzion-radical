@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>act_validateAndProcess.php</title>
+<link rel="stylesheet" type="text/css" href="Manager.wcp_files/fm.css">
+<script type="text/javascript" src="Manager.wcp_files/fm.js"></script>
+
+<script type="text/javascript">
+var isClose = 0;
+function closeWnd(){
+if (isClose){
+if (confirm("Save your changes before close file?")){
+document.myform.closeExit.value="1";
+document.myform.submit();
+isClose=null;
+}
+else{isClose=null; window.close();}
+}
+else{isClose=null; window.close();}
+}
+</script>
+</head><body background="Manager.wcp_files/toolsLine.html">
+<form action="Manager.wcp" method="post" name="myform">
+<input name="action" value="edit" type="hidden">
+<input name="closeExit" type="hidden">
+<input name="file" value="subdomains/radical/neighbors/act_validateAndProcess.php" type="hidden">
+<textarea id="content1" name="content" rows="25" cols="50" style="width: 100%;" onchange="javascript:isClose=1;">&lt;?php
+$isError
+ = false;
+
+if ($_POST['ContactName']) {
+	$ContactName = $_POST['ContactName'];
+} else {
+	$errorMSGContactName = 'Please provide a Name.&lt;br /&gt;';
+	$isError = true;
+}	
+$EmailAddy = $_POST['EmailAddy'];
+$PhoneNumber = $_POST['PhoneNumber'];
+$ContactLocation = $_POST['ContactLocation'];
+
+if (!validEmail($EmailAddy) &amp;&amp; $_POST['EmailAddy']) {
+	$errorMSGEmailAddy = 'Please provide a valide email address.&lt;br 
+/&gt;';
+	$isError = true;
+}
+
+
+if (!$isError) { 
+ $myVal =	mysql_query("insert into 
+neighborcontacts(`name`,`homelocation`,`email`,`phone`,`updated`) values
+ ('$ContactName', '$ContactLocation', '$EmailAddy', '$PhoneNumber', 
+NOW())");
+}
+/**
+Validate an email address.
+Provide email address (raw input)
+Returns true if the email address has the email
+address format and the domain exists.
+*/
+function validEmail($email)
+{
+	$isValid = true;
+	$atIndex = strrpos($email, "@");
+	if (is_bool($atIndex) &amp;&amp; !$atIndex)
+	{
+		$isValid = false;
+	}
+	else
+	{
+		$domain = substr($email, $atIndex+1);
+		$local = substr($email, 0, $atIndex);
+		$localLen = strlen($local);
+		$domainLen = strlen($domain);
+		if ($localLen &lt; 1 || $localLen &gt; 64)
+		{
+			// local part length exceeded
+			$isValid = false;
+		}
+		else if ($domainLen &lt; 1 || $domainLen &gt; 255)
+		{
+			// domain part length exceeded
+			$isValid = false;
+		}
+		else if ($local[0] == '.' || $local[$localLen-1] == '.')
+		{
+			// local part starts or ends with '.'
+			$isValid = false;
+		}
+		else if (preg_match('/\\.\\./', $local))
+		{
+			// local part has two consecutive dots
+			$isValid = false;
+		}
+		else if (!preg_match('/^[A-Za-z0-9\\-\\.]+$/', $domain))
+		{
+			// character not valid in domain part
+			$isValid = false;
+		}
+		else if (preg_match('/\\.\\./', $domain))
+		{
+			// domain part has two consecutive dots
+			$isValid = false;
+		}
+		else if
+		(!preg_match('/^(\\\\.|[A-Za-z0-9!#%&amp;`_=\\/$\'*+?^{}|~.-])+$/',
+		str_replace("\\\\","",$local)))
+		{
+			// character not valid in local part unless
+			// local part is quoted
+			if (!preg_match('/^"(\\\\"|[^"])+"$/',
+			str_replace("\\\\","",$local)))
+			{
+				$isValid = false;
+			}
+		}
+		/*if ($isValid &amp;&amp; !(checkdnsrr($domain,"MX") ||
+		↪checkdnsrr($domain,"A")))
+		{
+		// domain not found in DNS
+			$isValid = false;
+		} */
+		}
+		return $isValid;
+	}
+?&gt;</textarea><p align="center">
+<input type="reset">
+<input name="submitSave" value="Save" onclick="javascript:isClose=0;" type="submit">
+<input name="closeSave" value="Save &amp; close" onclick="javascript:isClose=0;" type="submit">
+<input value="Cancel" onclick="closeWnd();" type="button"></p></form></body></html>
