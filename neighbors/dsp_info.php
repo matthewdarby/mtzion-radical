@@ -21,12 +21,41 @@
 			<ul>
 				<li><a title="Mt. Zion Church" href="http://mtzioncary.org/">Mt. Zion</a></li>
 				<li><a title="Mt. Zion Family" href="http://family.mtzioncary.org">Family</a></li>
-				<li><a title="The Radical Experiment at Mt. Zion" href="http://radical.mtzioncary.org">Radical</a></li>
 			</ul>
 		</div>
 		<div class="page">
 	        <div id="main">
 	        	<?php if (isset($myVal)) echo 'The Value of the Database insert is:' . $myVal ?>
+				<h2>Project: Serve Thy Neighbor</h2>
+
+				<p>As Christians, we are to love and serve Christ and our neighbors in the surrounding culture at the same time. You cannot love and serve your neighbor if you do not know that neighbor. Time spent with neighbors result in conversions which may result in spiritual conversation, or at the very least a greater appreciation of the work of Christ.  If you did not participate in Project: Know Thy Neighbor (see below), you can do it now and still participate in Serve Thy Neighbor.</p>
+				<h3>Radical Challenge</h3>
+			
+				<p>Here's the challenge:</p>
+				<ol>
+			    	<li>Perform at least 1 act of service for a neighbor (preferably the neighbor that you got to know in Project: Know Thy Neighbor) between January and March.</li>
+			    	<li>The goal at this time is to serve your neighbor (with no strings attached) and not necessarily share the Gospel (but if the opportunity presents itself to share the Gospel, by all means do it).</li>
+				</ol>
+				<p>If you would commit to this challenge, please sign-up.</p>
+			
+				<p>To help you in this project, here are a few practical suggestions on how to serve your neighbors. Please check back regularly for updated suggestions and ideas.</p>
+				<ul>
+				    <li>Walk your dog regularly around the same time in your neighborhood</li>
+				    <li>Babysit your neighbor's children to allow neighbors to go out.</li>
+				    <li>Pass out baked goods (fresh bread, cookies, brownies, etc.)</li>
+				    <li>Cut your neighbor's grass</li>
+				    <li>Wash your neighbor's car</li>
+				    <li>Walk your neighbor's dog</li>
+				    <li>Pick up medicine or groceries for an elderly neighbor</li>
+				    <li>Start a weekly open meal night in your home</li>
+				    <li>Create a block/street e-mail and phone contact list for safety</li>
+				    <li>Host a sports game watching party</li>
+				    <li>Host a coffee and dessert night</li>
+				    <li>Start hosting a play date weekly for other stay at home parents</li>
+				    <li>Organize a carpool for your neighborhood to help save gas</li>
+			    </ul>
+
+				<hr />
 				<h2>Project: Know Thy Neighbor</h2>
 				
 				<p>As Christians, we are to love and serve Christ and our neighbors in the surrounding culture at the same time.  You cannot love and serve your neighbor if you do not know that neighbor. Time spent with neighbors result in conversions which may result in spiritual conversation, or at the very least a greater appreciation of the work of Christ.</p>   
