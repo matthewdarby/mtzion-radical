@@ -10,6 +10,7 @@ if ($_POST['ContactName']) {
 $EmailAddy = $_POST['EmailAddy'];
 $PhoneNumber = $_POST['PhoneNumber'];
 $HomeTown = $_POST['HomeTown'];
+$formid = $_POST['formid'];
 
 if (!validEmail($EmailAddy) && $_POST['EmailAddy']) {
 	$errorMSGEmailAddy = 'Please provide a valide email address.<br />';
@@ -22,6 +23,7 @@ if (!$isError) {
      'email' => $EmailAddy,
      'phone' => $PhoneNumber,
      'hometown' => $HomeTown,
+     'formid' => $formid,
      'updated' => date ("Y-m-d H:m:s")
  ));
 

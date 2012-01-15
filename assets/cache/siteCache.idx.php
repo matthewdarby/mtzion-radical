@@ -39,7 +39,7 @@ $c['number_of_messages'] = "30";
 $c['number_of_results'] = "20";
 $c['use_editor'] = "1";
 $c['use_browser'] = "1";
-$c['rb_base_dir'] = "D:/home/mtzioncary.org/subdomains/radical/assets/";
+$c['rb_base_dir'] = "/var/web/mtzion/modx/radical/assets/";
 $c['rb_base_url'] = "assets/";
 $c['which_editor'] = "TinyMCE";
 $c['fe_editor_lang'] = "english";
@@ -55,7 +55,7 @@ $c['upload_files'] = "aac,au,avi,css,cache,doc,docx,gz,gzip,htaccess,htm,html,js
 $c['upload_maxsize'] = "1048576";
 $c['new_file_permissions'] = "0644";
 $c['new_folder_permissions'] = "0755";
-$c['filemanager_path'] = "D:/home/mtzioncary.org/subdomains/radical/";
+$c['filemanager_path'] = "/var/web/mtzion/modx/radical/";
 $c['theme_refresher'] = "";
 $c['manager_layout'] = "4";
 $c['custom_contenttype'] = "application/rss+xml,application/pdf,application/vnd.ms-word,application/vnd.ms-excel,text/html,text/css,text/xml,text/javascript,text/plain";
@@ -4453,7 +4453,7 @@ switch ($e->name ) {
 $p['TransAliasProps'] = '&table_name=Trans table;list;common,russian,utf8,utf8lowercase;utf8lowercase &char_restrict=Restrict alias to;list;lowercase alphanumeric,alphanumeric,legal characters;legal characters &remove_periods=Remove Periods;list;Yes,No;No &word_separator=Word Separator;list;dash,underscore,none;dash &override_tv=Override TV name;string; ';
 $e = &$this->pluginEvent;
 $e['OnBeforeManagerLogin'] = array('Forgot Manager Login');
-$e['OnDocFormPrerender'] = array('ManagerManager','Quick Manager+','Inherit Parent Template');
+$e['OnDocFormPrerender'] = array('Quick Manager+','Inherit Parent Template','ManagerManager');
 $e['OnDocFormRender'] = array('ManagerManager');
 $e['OnDocFormSave'] = array('Quick Manager+');
 $e['OnInterfaceSettingsRender'] = array('TinyMCE Rich Text Editor');

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
-	<title>Love Thy Neighbor - The Radical Experiment at Mt. Zion</title>
+	<title>Radical Love: Loving & Serving Our Neighbors</title>
 	<meta name="description" content="A new project to encourge Mt. Zion member to get to know thier neighbors during the Radical Experiment" />
 	<meta name="keywords" content="" />
 	<link href="/css/my_layout.css" rel="stylesheet" type="text/css" />
@@ -15,7 +15,7 @@
 <body>
 	<div class="page_margins">
       <div id="header">
-        <img src="/images/experimentLogo.jpg" alt="The Radical Experiment" />
+        <img src="/images/serveThyNeighbor.jpg" alt="The Radical Experiment" />
       </div>	
 		<div id="navigation">
 			<ul>
@@ -25,7 +25,7 @@
 		</div>
 		<div class="page">
 	        <div id="main">
-	        	<?php if (isset($myVal)) echo 'The Value of the Database insert is:' . $myVal ?>
+	        	<h1>Radical Love: Loving & Serving Our Neighbors</h1>
 				<h2>Project: Serve Thy Neighbor</h2>
 
 				<p>As Christians, we are to love and serve Christ and our neighbors in the surrounding culture at the same time. You cannot love and serve your neighbor if you do not know that neighbor. Time spent with neighbors result in conversions which may result in spiritual conversation, or at the very least a greater appreciation of the work of Christ.  If you did not participate in Project: Know Thy Neighbor (see below), you can do it now and still participate in Serve Thy Neighbor.</p>
@@ -54,7 +54,11 @@
 				    <li>Start hosting a play date weekly for other stay at home parents</li>
 				    <li>Organize a carpool for your neighborhood to help save gas</li>
 			    </ul>
-
+				<p id="signup"><a href="/neighbors?signup">Sign Up to Serve Thy Neighbor</a></p>
+				<a name="contacts" ></a>
+				<div id="contacts">
+					<?php  include('act_contactList.php') ?>
+				</div>
 				<hr />
 				<h2>Project: Know Thy Neighbor</h2>
 				
@@ -81,18 +85,13 @@
 				<li><strong>Involve any of the other neighbors you can (potluck, progressive dinner).</strong> This helps ensure that they show up, and it also means they will feel more invested. Hopefully it will keep them from thinking you are trying to be some kind of social control freak.</li>
 				<li><strong>Be transparent about your faith.</strong> When you first met with your neighbors, many may be excited that you've taken such a bold step. In that moment, you can simply say: "This is something Christians value." And in that one sentence, you have made your faith and given all credit for something which the people openly liked about us to Christianity.  Plain-spoken honesty is the best, and most effective, way to live with your neighbors. Another way to be transparent about your faith is to invite your neighbors to join with you in blessing the meal.</li>
 				</ul>
-				<p id="signup"><a href="/neighbors?signup">Sign Up to Know Thy Neighbor</a></p>
-				<a name="contacts" ></a>
-				<div id="contacts">
-					<?php  include('act_contactList.php') ?>
-				</div>
-			</div>
 	        <div id="footer">
 	          <p>
 	            <a href="http://mtzioncary.org/">Mt. Zion Church</a> - Cary, NC
 	          </p>
 	
-	        </div>				
+	        </div>	
+			</div>	        			
 		</div>
 	</div>
 </body>

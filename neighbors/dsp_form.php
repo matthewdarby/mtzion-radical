@@ -15,7 +15,7 @@
 <body>
 	<div class="page_margins">
       <div id="header">
-        <img src="/images/experimentLogo.jpg" alt="The Radical Experiment" />
+        <img src="/images/serveThyNeighbor.jpg" alt="The Radical Experiment" />
       </div>		
 		<div id="navigation">
 			<ul>
@@ -26,7 +26,7 @@
 		</div>
 		<div class="page">
 			<div id="main">
-			<h3>Sign Up to Know Thy Neighbor</h3>
+			<h3>Sign Up to Serve Thy Neighbor</h3>
 			<p>Our goal is to know who is signing up to participate in this project. Only your name will be displayed on the next page. We are collecting
 			your phone number or email address only as a means to contact you about more information with this project. </p>
 			<p><a href="/neighbors"><-- Go back to the project page.</a></p>
@@ -57,15 +57,16 @@
 					</fieldset>
 					<fieldset class="submit">	
 						<input name="gutcheck" type="hidden" value="1" />
+						<input name="formid" type="hidden" value="2" />
 						<input name="submit" class="button" id="submit" type="submit" value="Sign Up!" />
 					</fieldset>
 				</form>
-				</div>
 		        <div id="footer">
 		          <p>
 		            <a href="http://mtzioncary.org/">Mt. Zion Church</a> - Cary, NC
 		          </p>		
-		        </div>				
+		        </div>	
+		      </div>			
 			</div>
 		</div>
 	</div>			

@@ -26,15 +26,15 @@
 
   /* (en) Marginal areas & page background */
   /* (de) Randbereiche & Seitenhintergrund */
-  body { background: #000 url("/images/radical-bg.jpg") no-repeat top right fixed; padding: 10px 0; font-family: Corbel, �Lucida Grande�, �Lucida Sans Unicode�, �DejaVu Sans�, �Bitstream Vera Sans�, �Liberation Sans�, Verdana, �Verdana Ref�, sans-serif;}
+  body { background: #000; padding: 10px 0; font-family: Corbel, �Lucida Grande�, �Lucida Sans Unicode�, �DejaVu Sans�, �Bitstream Vera Sans�, �Liberation Sans�, Verdana, �Verdana Ref�, sans-serif;}
 
   /* Layout Alignment | Layout-Ausrichtung */
   .page_margins { margin: 0 auto; }
 
   /* Layout Properties | Layout-Eigenschaften */
   .page_margins { width: 840px;  }
-  .page { margin: 40px 0; background: #fff; background: url("/images/fade_820_bottom.png") no-repeat scroll left top transparent;  clear: both;}
-  #header { padding: 45px 2em 1em 20px; color: #fff; text-align: center;}
+  .page { margin-bottom: 40px; background: #fff; background: url("/images/fade_820_bottom.png") no-repeat scroll left top transparent;  clear: both;}
+  #header { padding: 0px; color: #fff; text-align: center;}
   #main { margin: 10px 0; background: #fff; }
   #footer { padding: 10px 20px; color:#666; background: #f9f9f9; border-top: 5px #efefef solid; text-align:center;}
 
